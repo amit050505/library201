@@ -14,7 +14,7 @@
     </p> 
     <p class="lblDescription" style="text-align: justify;">{{book.description}}</p>
     <div>
-            <span (click)="openDetails(book)" class="btn btn-info btn-sm" style="height:20px; line-height: 8px;">View Details</span> &nbsp;&nbsp;
+            <span (click)="openDetails()" class="btn btn-info btn-sm" style="height:20px; line-height: 8px;">View Details</span> &nbsp;&nbsp;
             <span *ngIf="book.availability == 'Available'" class="btn btn-success btn-sm" style="height:20px; line-height: 8px;">Issue this Book</span>            
     </div>
   </div>

@@ -1,3 +1,4 @@
+import { Book } from './../models/book.model';
 import { BookService } from './../book.service';
 import { Component, OnInit, Inject } from '@angular/core';
 import { MatDialog, MatDialogRef, MAT_DIALOG_DATA} from '@angular/material';
@@ -15,11 +16,7 @@ export interface DialogData {
 })
 export class ProductsComponent implements OnInit {
   public booksData :  any;
-  search = {name:"", author:"", categories:[]}
-  
-  animal: string;
-  name: string; 
-
+  search = {name:"", author:"", categories:[]}   
 
   constructor(public ser : BookService, public dialog: MatDialog) {
         //console.log("in constructor");
@@ -69,12 +66,12 @@ export class ProductsComponent implements OnInit {
   //   this.ser.addBook().subscribe(data => {alert("Succesfully Added Product details")},Error => {alert("failed while adding product details")})
   // }
 
-  openDialog(b): void {
+  openDialog(book: Book): void {
     const dialogRef = this.dialog.open(DialogOverviewExampleDialog, {
       width: '1000px',
       height: '600px',
       // data: {name: 'amit', animal: 'rabbit'}
-      data: b
+      data: book
     });
     //console.log("after open");
 
@@ -94,7 +91,7 @@ export class DialogOverviewExampleDialog {
 
   constructor(
     public dialogRef: MatDialogRef<DialogOverviewExampleDialog>,
-    @Inject(MAT_DIALOG_DATA) public data: DialogData) {}
+    @Inject(MAT_DIALOG_DATA) public data: Book) {}
 
   onNoClick(): void {
     this.dialogRef.close();
