@@ -1,0 +1,88 @@
+<div>
+        <div class="row">
+            <div class="col-xs-12 col-md-4 ">
+                <div class="form-group">
+                    <label for="">Title of Book</label>
+                    <input type="text"  [(ngModel)]="title" class="form-control" id="">
+                  </div> 
+            </div>
+            <div class="col-xs-12 col-md-4 ">
+                <div class="form-group">
+                    <label for="">Author Name</label>
+                    <input type="text"  [(ngModel)]="author"  class="form-control" id="">
+                  </div> 
+            </div>
+            <div class="col-xs-12 col-md-4 ">
+                    <div class="form-group">
+                        <label for="">ISBN</label>
+                        <input type="text"  [(ngModel)]="isbn"   class="form-control" id="">
+                      </div> 
+            </div>
+            <div class="col-xs-12 col-md-4 ">
+                    <div class="form-group">
+                            <label for="sel1">Category</label>
+                            <select class="form-control"  [(ngModel)]="category" id="sel1">
+                              <option>Technology</option>
+                              <option>Business</option>
+                              <option>Management</option>
+                              <option>Fiction</option>
+                            </select>
+                    </div>
+            </div>
+            <div class="col-xs-12 col-md-4 ">
+                    <div class="form-group">
+                        <label for="">Publisher</label>
+                        <input type="text"  [(ngModel)]="publisher"  class="form-control" id="">
+                      </div> 
+            </div>
+            <div class="col-xs-12 col-md-4 ">
+                    <div class="form-group">
+                        <label for="">Description</label>
+                        <input type="text"  [(ngModel)]="description"  class="form-control" id="">
+                      </div> 
+            </div>
+            <div class="col-xs-12 col-md-4 ">
+                    <div class="form-group">
+                        <label for="">Year</label>
+                        <input type="text"  [(ngModel)]="year"  class="form-control" id="">
+                      </div> 
+            </div>
+            <div class="col-xs-12 col-md-4 ">
+                    <div class="form-group">
+                        <label for="">Country</label>
+                        <input type="text"  [(ngModel)]="country" class="form-control" id="">
+                      </div> 
+            </div>
+            <div class="col-xs-12 col-md-4 ">
+                    <div class="form-group">
+                        <label for="">Pages</label>
+                        <input type="text"  [(ngModel)]="pages"  class="form-control" id="">
+                      </div> 
+            </div>
+            <div class="col-xs-12 col-md-4 ">
+                    <div class="form-group">
+                            <label for="sel1">Availability</label>
+                            <select class="form-control"  [(ngModel)]="availability" id="sel1">
+                              <option value="Available" selected>Available</option>
+                              <option value="Out of Stock">Out of Stock</option>                              
+                            </select>
+                    </div>
+            </div>
+            <div class="col-xs-12 col-md-4 ">
+                    <div class="form-group">
+                        <label for="">Website</label>
+                        <input type="text"  [(ngModel)]="website"  class="form-control" id="">
+                      </div> 
+            </div>
+        </div>        
+        <hr/>
+        <div class="row" >   
+            <div class="col-xs-12 col-md-6 "style="float:right">
+                <div  style="float:right">
+                    <button type="button" class="btn btn-primary" (click)="addBook()">Add New Book</button> &nbsp;
+                    <button (click)="clearForm()" type="button" class="btn btn-default">Clear</button>
+                </div>
+            </div>                      
+        </div>
+
+      </div>

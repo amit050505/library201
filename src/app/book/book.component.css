@@ -1,0 +1,29 @@
+.bookTitle
+{
+    transition: all .2s ease-in-out;
+}
+.lblDescription {
+    color:grey;
+}
+.bookThumb {
+    height:150px;
+    transition: all .2s ease-in-out;
+}
+.bookItem
+{
+    cursor: pointer;
+}
+
+.bookItem:hover  .bookThumb
+{
+    transform: scale(1.2);
+    
+}
+.bookItem:hover  .bookTitle
+{
+    color:red;
+}
+
+.green {
+color:green
+}

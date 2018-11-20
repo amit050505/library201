@@ -1,0 +1,44 @@
+<div style="text-align:justify">
+    <h1 mat-dialog-title style="color:darkblue">{{data.title}}</h1>
+    <p style="color:grey">{{data.author}} | {{data.year}} | {{data.country}}</p>
+    <hr/>
+    <span class="badge badge-pill badge-primary" style="background-color: darkblue; color:white">{{data.category}}</span>
+    <hr/>
+    DESCRIPTION: {{data.description}}
+    <hr/>
+    <div mat-dialog-content>
+            <div class="row">
+                    <div class="col-xs-12 col-md-6">
+                        ISBN: {{data.isbn}}
+                    </div>
+                    <div class="col-xs-12 col-md-6">
+                        published: {{data.published}}
+                    </div>
+            </div>
+            <hr/>
+            <div class="row">
+                    <div class="col-xs-12 col-md-6">
+                        SubTitle: {{data.subtitle}}
+                    </div>
+                    <div class="col-xs-12 col-md-6">
+                        publisher: {{data.publisher}}
+                    </div>
+            </div>
+            <hr/>
+            <div class="row">
+                    <div class="col-xs-12 col-md-6">
+                        pages: {{data.pages}}
+                    </div>
+                    <div class="col-xs-12 col-md-6">
+                        <a href="{{data.website}}" style="text-decoration:none">Go to Website</a>
+                    </div>
+            </div>   
+            <hr/>
+            <div class="row">
+                <div class="col-xs-12 col-md 6">
+                    <p [ngStyle]="{'color':data.availability == 'Available' ? 'green' : 'red' }">{{data.availability}}</p> 
+                </div>
+            </div>
+    </div>    
+</div>
+    
