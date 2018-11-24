@@ -2335,6 +2335,54 @@
         "year": 1867
       },
       "id": 18
+    },
+    {
+      "username": "ak04",
+      "returnDate": "9-12-2018",
+      "issueDate": "24-11-2018",
+      "book": {
+        "id": 1,
+        "isbn": "9781593275846",
+        "subtitle": "A Modern Introduction to Programming",
+        "published": "2014-12-14T00:00:00.000Z",
+        "publisher": "No Starch Press",
+        "description": "JavaScript lies at the heart of almost every modern web application, from social apps to the newest browser-based games. Though simple for beginners to pick up and play with, JavaScript is a flexible, complex language that you can use to build full-scale applications.",
+        "category": "Business",
+        "availability": "Available",
+        "author": "George Eliot",
+        "country": "United Kingdom",
+        "imageLink": "images/middlemarch.jpg",
+        "language": "English",
+        "website": "https://en.wikipedia.org/wiki/Middlemarch\n",
+        "pages": 800,
+        "title": "Middlemarch",
+        "year": 1871
+      },
+      "id": 19
+    },
+    {
+      "username": "admin",
+      "returnDate": "9-12-2018",
+      "issueDate": "24-11-2018",
+      "book": {
+        "id": 1,
+        "isbn": "9781593275846",
+        "subtitle": "A Modern Introduction to Programming",
+        "published": "2014-12-14T00:00:00.000Z",
+        "publisher": "No Starch Press",
+        "description": "JavaScript lies at the heart of almost every modern web application, from social apps to the newest browser-based games. Though simple for beginners to pick up and play with, JavaScript is a flexible, complex language that you can use to build full-scale applications.",
+        "category": "Business",
+        "availability": "Available",
+        "author": "George Eliot",
+        "country": "United Kingdom",
+        "imageLink": "images/middlemarch.jpg",
+        "language": "English",
+        "website": "https://en.wikipedia.org/wiki/Middlemarch\n",
+        "pages": 800,
+        "title": "Middlemarch",
+        "year": 1871
+      },
+      "id": 20
     }
   ]
 }
